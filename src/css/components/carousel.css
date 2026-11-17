@@ -17,6 +17,7 @@ Les margin négatifs à gauche et à droite corresponde à l'espace entre le nav
 */
 flex.conteneur {
   display: flex;
+  flex: 1 0 260px;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   margin-left: -24px;
@@ -25,6 +26,7 @@ flex.conteneur {
 /* Compléter la suite du code */
 .carousel__controls {
   display: flex;
+  flex: 1 0 260px;
   gap: 16px;
   align-items: center;
   justify-content: center;
