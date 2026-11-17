@@ -27,13 +27,13 @@ Les `____` sont à remplacer par les termes corrects.
 Trouvez l'élément de classe CSS `carousel__container` :
 
 ```js
-carousel = document.querySelector("______");
+carousel = document.querySelector(".carousel__container");
 ```
 
 Doit afficher dans la console :
 
 ```html
-<div class="carousel__container" role="region" aria-live="polite">...</div>
+<div class=".carousel__container" role="region" aria-live="polite">...</div>
 ```
 
 Maintenant changer la position du scroll :
