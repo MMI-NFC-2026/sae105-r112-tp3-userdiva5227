@@ -33,7 +33,7 @@ carousel = document.querySelector(".carousel__container");
 Doit afficher dans la console :
 
 ```html
-<div class=".carousel__container" role="region" aria-live="polite">...</div>
+<div class="carousel__container" role="region" aria-live="polite">...</div>
 ```
 
 Maintenant changer la position du scroll :
@@ -67,7 +67,7 @@ Scroll vers la droite (scroll **moins**)
 Trouvez l'élément de classe CSS `carousel__button--prev` :
 
 ```js
-prevButton = __________________;
+prevButton = document.querySelector(".carousel__button--prev");
 ```
 
 Doit afficher dans la console :
@@ -84,7 +84,7 @@ Doit afficher dans la console :
 Trouvez l'élément de classe CSS `carousel__button--next` :
 
 ```js
-nextButton = _______________________;
+nextButton = document.querySelector(".carousel__button--next");
 ```
 
 Doit afficher dans la console :
