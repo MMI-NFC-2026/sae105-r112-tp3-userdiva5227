@@ -24,14 +24,18 @@ flex.conteneur {
   margin-right: -24px;
 }
 /* Compléter la suite du code */
+.carousel {
+  position: relative;
+}
+
 .carousel__controls {
+  position: absolute;
+  top: 130px;
+  left: 0;
+  right: 0;
   display: flex;
-  flex: 1 0 260px;
-  gap: 16px;
-  align-items: center;
-  justify-content: center;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  justify-content: space-between;
+  pointer-events: none;
 
   /* Utilise flexbox pour aligner les éléments enfants - https://developer.mozilla.org/fr/docs/Web/CSS/display */
   /* Espace entre les éléments enfants 16px- https://developer.mozilla.org/fr/docs/Web/CSS/gap */
@@ -40,6 +44,7 @@ flex.conteneur {
   /* Marge de 16px en haut et en bas - https://developer.mozilla.org/fr/docs/Web/CSS/margin */
 }
 .carousel__button {
+  position: absolute;
   width: 50px;
   height: 50px;
   display: flex;
@@ -47,6 +52,8 @@ flex.conteneur {
   justify-content: center;
   border: solid 1px;
   border-radius: 50%;
+  pointer-events: auto;
+  z-index: 1;
 
   /* Largeur du bouton 50px - https://developer.mozilla.org/fr/docs/Web/CSS/width */
   /* Hauteur du bouton 50px - https://developer.mozilla.org/fr/docs/Web/CSS/height */
@@ -57,10 +64,14 @@ flex.conteneur {
   /* Bordure arrondie pour faire un cercle - https://developer.mozilla.org/fr/docs/Web/CSS/border-radius */
 }
 .carousel__button--prev {
+  left: 16px;
   transform: rotate(180deg);
   /* Fait pivoter le bouton de 180 degrés - https://developer.mozilla.org/fr/docs/Web/CSS/transform */
 }
 
+.carousel__button--next {
+  right: 16px;
+}
 .carousel__container {
   display: flex;
   gap: 16px;
