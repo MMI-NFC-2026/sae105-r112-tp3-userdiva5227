@@ -77,13 +77,27 @@ flex.conteneur {
 }
 
 .carousel__item {
-  flex: 1 0 260px;
+  flex: 0 0 clamp(220px, 25vw, 260px);
   scroll-snap-align: center;
-  /* L'élément prend 1 part de l'espace disponible, ne rétrécit pas, et a une largeur de base de 260px - https://developer.mozilla.org/fr/docs/Web/CSS/flex */
+  /* La largeur varie avec l'écran, entre 220px et 260px - https://developer.mozilla.org/fr/docs/Web/CSS/flex */
   /* Aligne l'élément au centre lors du défilement - https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-align */
 }
 
 .carousel__item img {
   display: block;
+  width: 100%;
   /* Affiche l'image comme un bloc - https://developer.mozilla.org/fr/docs/Web/CSS/display */
+}
+
+.carousel__anchors ul {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 0;
+  margin: 16px 0;
+  list-style: none;
+}
+
+.carousel__anchors a {
+  color: inherit;
 }
